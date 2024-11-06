@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Your Airtable token
-const airtableToken = 'Bearer YOUR_AIRTABLE_TOKEN';
+const airtableToken = 'Bearer patX200VGkvIdjhvl.85e8e525a33b49ef814bfbfc0c0af14631faf88b39fd566a99a5c3de203a181a';
 
 app.post('/.netlify/functions/server/fetch-data', async (req, res) => {
   const { url } = req.body;
